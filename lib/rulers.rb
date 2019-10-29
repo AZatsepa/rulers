@@ -1,4 +1,4 @@
-require "rulers/version"
+require 'rulers/version'
 
 module Rulers
   class Error < StandardError; end
