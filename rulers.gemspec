@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rulers/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'rulers'
+  spec.name          = 'rulers-zatsepa'
   spec.version       = Rulers::VERSION
   spec.authors       = ['zatsepa']
   spec.email         = ['artem.zatsepa@nixsolutions.com']
