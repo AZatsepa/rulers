@@ -4,4 +4,11 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.3
-before_install: gem install bundler -v 2.0.2
+before_install:
+  - gem install bundler -v 2.0.2
+  - gem install bundler-audit
+install: bundle install
+script:
+  - bundle audit check --update
+  - bundle exec rubocop .
+  - bundle exec rspec
