@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rulers-zatsepa (0.1.0)
+    rulers-zatsepa (0.1.1)
       rack (~> 2.0.7)
 
 GEM
@@ -13,6 +13,8 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.2)
     rack (2.0.7)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rainbow (2.2.2)
       rake
     rake (10.5.0)
@@ -43,6 +45,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
+  rack-test
   rake (~> 10.0)
   rspec (~> 3.0)
   rubocop (~> 0.39.0)

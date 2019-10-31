@@ -1,4 +1,9 @@
 require 'bundler/setup'
+require 'rack/test'
+# Always use local Rulers first
+this_dir = File.join(File.dirname(__FILE__), '..')
+$LOAD_PATH.unshift File.expand_path(this_dir)
+
 require 'rulers'
 
 RSpec.configure do |config|
@@ -11,4 +16,6 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.include Rack::Test::Methods
 end
